@@ -1,2 +1,64 @@
-*
-    background-color: #fff
+
+@mixin circle 
+    position: absolute
+    top: 10%
+    width: 3vw
+    height: 3vw
+    border-radius: 50px
+@mixin circle_text
+    text-align: center
+    font-size: 1.2vw
+    margin-top: 0.8vw
+    color: #fff
+    
+.products
+    font-family: sans-serif
+    &_row
+        padding: 1%
+        margin: 2%
+        &_item
+            display: inline-block
+            vertical-align: top
+            width: 24%
+            margin-top: 5%
+            &_image
+                position: relative
+                width: 100%
+                img
+                    display: block
+                    margin: 0 auto
+                    width: 90%
+                &_circle
+                    @include circle
+                    left: 10%
+                    background-color: #1b5725
+                    &_new
+                        @include circle_text 
+                &_sale
+                    @include circle
+                    right: 10%
+                    background-color: #a50c0c
+                    &_percent
+                        @include circle_text
+            &_text
+                padding: 3% 3% 0 3%
+                text-align: center
+                &_name
+                    font-size: calc( 15px + 0.5vw )
+                &_price
+                    &_current, &_old
+                        display: inline-block
+                        margin: 2% 0 3% 0
+                    &_current
+                        color: #1b5725
+                        font-size: calc( 17px + 0.6vw )
+                    &_old
+                        color: #585858
+                        font-size: calc( 15px + 0.5vw )
+                        text-decoration: line-through
+                &_btn
+                    font-size: calc( 16px + 0.5vw )
+
+
+
+                    
