@@ -1,0 +1,94 @@
+*{
+    font-family: Roboto;
+}
+
+nav {
+    background-color: rgb(175, 216, 216);
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_wrapper_item1 {
+    font-weight: 400;
+    color:rgb(57, 60, 63);
+}
+
+.nav_wrapper button {
+    background-color: rgb(45, 120, 170);
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    padding: 3px;
+}
+
+.first {
+    min-height: 50vh;
+    background-image: url("https://images.pexels.com/photos/1452701/pexels-photo-1452701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: 100vw;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding: 15vh 20vw 10vh 20vw;
+}
+
+.first h1 {
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    margin-bottom: 4vh;
+}
+
+.first form {
+    text-align: center;
+}
+
+.first .email{
+    width: 15vw;
+    border: none;
+    border-radius: 7px;
+}
+
+.first form button {
+    /* width: 7vw; */
+    background-color: rgb(45, 120, 170);
+    border: none;
+    border-radius: 5px;
+    color:rgb(57, 60, 63);
+}
+
+.first form button #submit {
+    border: none;
+    background-color: rgb(45, 120, 170);
+    color: #fff;
+}
+
+.second {
+    min-height: 35vh;
+}
+
+.second .second_wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 0vw 0vh 0vw;
+}
+
+.second .second_wrapper .second_wrapper_item {
+    width: 18vw;
+    text-align: center;
+}
+
+.second .second_wrapper .second_wrapper_item .second_wrapper_item_icon {
+    font-size: 2vw;
+    color:rgb(45, 120, 170);
+}
+
+.second .second_wrapper .second_wrapper_item .second_wrapper_item_text1 {
+    font-size: 1.5vw;
+    margin: 2vh 0 2vh 0;
+}
