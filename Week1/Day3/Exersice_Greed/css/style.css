@@ -1,0 +1,162 @@
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 40px;
+}
+
+.item1 {
+    background-color: rgb(236, 53, 53);
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 1;
+}
+.item2 {
+    background-color: rgb(236, 53, 53);
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 1;
+}
+
+.item3 {
+    background-color: rgb(236, 53, 53);
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 1;
+}
+
+.item4 {
+    background-color: rgb(53, 208, 236);
+    grid-row: 1/ span 1;
+    grid-column: 2/ span 3;
+}
+.item5 {
+    background-color: rgb(53, 208, 236);
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 3;
+}
+
+.item6 {
+    background-color: rgb(53, 208, 236);
+    grid-row: 3/ span 1;
+    grid-column: 2/ span 3;
+}
+
+.item7 {
+    background-color: rgb(53, 236, 77);
+    grid-row: 4/ span 1;
+    grid-column: 1/ span 4;
+}
+
+
+.wrapper{
+    margin: 70px;
+    padding: 0 20% 0 20%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 200px 200px 200px 100px 100px;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "hero hero main main main"
+    "slidebar slidebar main main main"
+    "slidebar slidebar extra extra extra"
+    "related related related related posts"
+    "footer footer footer footer footer";
+    gap: 20px;
+}
+.nav {
+    background-color: rgb(22, 152, 204);
+    grid-area: nav;
+}
+.hero {
+    background-color: rgb(221, 81, 179);
+    grid-area: hero;
+}
+.main_content {
+    background-color: rgb(207, 221, 81);
+    grid-area: main;
+}
+
+.slidebar {
+    background-color: rgb(52, 204, 52);
+    grid-area: slidebar;
+}
+
+.extra_content {
+    background-color: rgb(48, 48, 48);
+    grid-area: extra;
+}
+
+.related_images {
+    background-color: rgb(16, 95, 1);
+    grid-area: related;
+}
+
+.related_posts {
+    background-color: rgb(95, 1, 83);
+    grid-area: posts;
+}
+
+.footer {
+    background-color: rgb(223, 104, 7);
+    grid-area: footer;
+}
+
+
+.grid{
+    margin: 0 auto;
+    padding: 20px;
+    height: 70vh;
+    width: 50vh;
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "b e e"
+    "f f g"
+    "h h h";
+    gap: 20px;
+    background-color: #5a5757;
+}
+
+.it1 {
+    background-color: rgb(223, 104, 7);
+    grid-area: a;
+}
+
+.it2 {
+    background-color: rgb(140, 223, 7);
+    grid-area: b;
+}
+
+.it3 {
+    background-color: rgb(7, 223, 104);
+    grid-area: c;
+}
+
+.it4 {
+    background-color: rgb(7, 216, 223);
+    grid-area: d;
+}
+
+.it5 {
+    background-color: rgb(223, 165, 7);
+    grid-area: e;
+}
+
+.it6 {
+    background-color: rgb(223, 104, 7);
+    grid-area: f;
+}
+
+.it7 {
+    background-color: rgb(140, 223, 7);
+    grid-area: g;
+}
+
+.it8 {
+    background-color: rgb(7, 223, 104);
+    grid-area: h;
+}
+
+
