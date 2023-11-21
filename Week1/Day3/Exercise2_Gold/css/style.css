@@ -1,0 +1,94 @@
+
+*{
+    border: solid 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main{
+    padding: 5%;
+    background-image: url(https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-61772.jpg);
+}
+
+.grid {
+    width: 80vw;
+    height: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 25% 60%; 
+}
+
+.title {
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 3;
+    justify-self: center;
+}
+
+.number{
+    display: block;
+    margin: 0 auto;
+}
+
+.number_title {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.number1 {
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 1;
+}
+
+.number2 {
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+}
+
+.number3 {
+    grid-row: 2/ span 1;
+    grid-column: 3/ span 1;
+}
+
+.people {
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.people_item{
+    margin: 1.5%;
+    position: relative;
+}
+
+.people_text {
+    padding: 8%;
+    font-size: calc(10px + 0.2vw);
+}
+
+.people_name{
+    text-align: center;
+    padding: 8%;
+}
+
+.people_photo{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.people1 {
+    align-self: flex-start;
+}
+
+.people2 {
+    align-self: flex-end;
+}
+
+.people3 {
+    align-self: center;
+}
