@@ -1,37 +1,53 @@
 
 *{
-    border: solid 1px;
+    /* border: solid 1px; */
     font-family: 'Open Sans', sans-serif;
 }
 
 .main{
-    padding: 5%;
+    padding: 0 15% 5% 15%;
     background-image: url(https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-61772.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grid {
-    width: 80vw;
-    height: 700px;
+    width: 80%;
+    height: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 15% 25% 60%; 
+    grid-template-rows: 16% 22% 62%; 
 }
 
 .title {
     grid-row: 1/ span 1;
     grid-column: 1/ span 3;
     justify-self: center;
+    width: 70%;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: calc(12px + 1vw);
 }
 
 .number{
     display: block;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 .number_title {
-    font-size: 2vw;
+    font-size: calc(12px + 1vw);
     font-weight: 800;
+    text-align: center;
+    color: rgb(143, 125, 207);
+}
+
+.number_text {
+    text-align: center;
+    font-size: calc(8px + 0.4vw);
 }
 
 .number1 {
@@ -62,13 +78,26 @@
 }
 
 .people_text {
-    padding: 8%;
-    font-size: calc(10px + 0.2vw);
+    padding: 8% 8% 17% 8%;
+    font-size: calc(9px + 0.3vw);
+    background-color: #fff;
+    color: #888787;
 }
 
 .people_name{
     text-align: center;
-    padding: 8%;
+    padding: 18% 8% 8% 8%;
+    color: #fff;
+}
+
+
+.people_name .people_name_full {
+    font-size: calc(10px + 0.5vw);
+    font-weight: 800;
+}
+
+.people_name .people_name_position {
+    font-size: calc(9px + 0.5vw);
 }
 
 .people_photo{
@@ -76,19 +105,85 @@
     top: 45%;
     left: 50%;
     transform: translateX(-50%);
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
+    background-image: url(https://c8.alamy.com/comp/2GCGA22/portrait-of-young-female-office-worker-2GCGA22.jpg);
+    background-size: 250%;
+    background-position: 45% -7%;
 }
 
 .people1 {
     align-self: flex-start;
 }
 
+.people1 .people_name {
+    background-color: rgb(207, 125, 146);
+}
+
 .people2 {
     align-self: flex-end;
 }
 
+.people2 .people_name {
+    background-color: rgb(143, 125, 207);
+}
+
 .people3 {
     align-self: center;
+}
+
+.people3 .people_name {
+    background-color: rgb(125, 191, 207);
+}
+
+
+@media all and (max-width: 1250px) {
+    .people_photo {
+        height: 50px;
+        width: 50px;
+        top: 55%
+    }
+
+    .people_text {
+        padding: 8% 8% 24% 8%;
+    }
+
+    .grid {
+        grid-template-rows: 20% 15% 65%; 
+    }
+    
+}
+
+@media all and (max-width: 1000px) {
+    .people {
+        flex-direction: column;
+    }
+
+    .people_item{
+        width: 80%;
+    }
+
+    .grid {
+        height: 1300px;
+        grid-template-rows: 10% 15% 75%; 
+    }
+
+    .people1 {
+        align-self: center;
+    }
+    
+    .people2 {
+        align-self: center;
+    }
+    
+    .people3 {
+        align-self: center;
+    }
+
+    .people_photo {
+        height: 60px;
+        width: 60px;
+        top: 50%
+    }
 }

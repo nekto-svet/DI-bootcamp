@@ -104,7 +104,7 @@
 .grid{
     margin: 0 auto;
     padding: 20px;
-    height: 70vh;
+    height: 50vh;
     width: 50vh;
     display: grid;
     grid-template-columns:2fr 2fr 2fr;
@@ -115,8 +115,7 @@
     "b e e"
     "f f g"
     "h h h";
-    gap: 20px;
-    background-color: #5a5757;
+    gap: 5px;
 }
 
 .it1 {
