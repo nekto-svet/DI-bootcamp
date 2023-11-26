@@ -46,8 +46,8 @@ else:
     print ("Wow, you are not me")
 
 # Exercise 9
-height = input ("Tell me your height: ")
-if int(height) > 145:
+height = input ("Tell me your height in inches: ")
+if int(height)*2.54 > 145:
     print("Ride!")
 else:
     print("You need to grow some more")
