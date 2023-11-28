@@ -19,9 +19,10 @@ sample_dict = {
   "city": "New york"
 }
 
-keys_to_remove = ["name", "salary"]
+keys_to_remove = ["name", "none", "salary"]
 for k in keys_to_remove:
-    del sample_dict[k]
+    if k in sample_dict:
+        del sample_dict[k]
 
 print(sample_dict)
 

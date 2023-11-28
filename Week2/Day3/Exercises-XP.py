@@ -1,34 +1,34 @@
-# # Exercise 1 : Convert Lists Into Dictionaries
-# # option 1
-# keys = ['Ten', 'Twenty', 'Thirty']
-# values = [10, 20, 30]
+# Exercise 1 : Convert Lists Into Dictionaries
+# option 1
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
 
-# result_dictionary = dict(zip(keys, values))
-# print (result_dictionary)
-
-
-# # option 2
-# keys1 = ['Ten', 'Twenty', 'Thirty']
-# values1 = [10, 20, 30]
-
-# res_dict = {}
-# for k in keys1:
-#     for v in values1:
-#         res_dict[k] = v
-#         values1.remove(v)
-#         break
-
-# print(res_dict)
-
-# # option 3
-# keys2 = ['Ten', 'Twenty', 'Thirty']
-# values2 = [10, 20, 30]
-
-# res_dictionary = {keys2[i]:values2[i] for i in range(len(keys2))}
-# print(res_dictionary)
+result_dictionary = dict(zip(keys, values))
+print (result_dictionary)
 
 
-#Exercise 2 : Cinemax
+# option 2
+keys1 = ['Ten', 'Twenty', 'Thirty']
+values1 = [10, 20, 30]
+
+res_dict = {}
+for k in keys1:
+    for v in values1:
+        res_dict[k] = v
+        values1.remove(v)
+        break
+
+print(res_dict)
+
+# option 3
+keys2 = ['Ten', 'Twenty', 'Thirty']
+values2 = [10, 20, 30]
+
+res_dictionary = {keys2[i]:values2[i] for i in range(len(keys2))}
+print(res_dictionary)
+
+
+# Exercise 2 : Cinemax
 number_of_visitiors = int(input("How many tickets do you need? "))
 n = 1
 visitors = {}
