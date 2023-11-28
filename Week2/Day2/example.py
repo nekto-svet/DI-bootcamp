@@ -14,3 +14,8 @@
 userNum = int(input (""))
 for i in range(1,11):
     print(f"{userNum}*{i}={userNum*i}")
+
+k = 1
+while k<=10:
+    print(k)
+    k+=1

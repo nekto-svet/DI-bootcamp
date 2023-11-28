@@ -22,7 +22,7 @@ while number_of_visitiors > 0:
     number_of_visitiors -=1
     if age < 3:
         continue
-    elif age >= 3 or age  <12:
+    elif age >= 3 and age  <12:
         total_cost +=10
     else:
         total_cost += 15
