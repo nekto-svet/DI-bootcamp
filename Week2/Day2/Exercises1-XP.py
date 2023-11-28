@@ -1,95 +1,15 @@
-# Exercise 1 sets
-my_fav_numbers = set()
-my_fav_numbers.add(6)
-my_fav_numbers.add(8)
-my_fav_numbers.remove(8)
-friend_fav_numbers = {3,7,9}
-our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
-
-# Exercise 2 tuples
-#no, because tuples are immutable
-
-# Exercise 3 lists
-basket = ["Banana", "Apples", "Oranges", "Blueberries"]
-basket.remove("Banana")
-basket.remove("Blueberries")
-basket.append("Kiwi")
-basket.insert(0,"Apples")
-# basket = ["Apples"]+basket
-count_apples=basket.count("Apples")
-print(count_apples)
-basket.clear()
-print(basket)
-
-# Exercise 4 floats
-# Floats are decimal values, and integers are real numbers.
-
-list_floats = list()
-i=1.5
-k=2
-while k<=5:
-    list_floats.append(i)
-    i+=1
-    list_floats.append(k)
-    k+=1
-print(list_floats)
-
-list_floats2 = list()
-a=1.5
-while a<=5:
-    if a%1 != 0:
-        list_floats2.append(a)
-        a+=0.5
-    else:
-        list_floats2.append(int(a))
-        a+=0.5
-print(list_floats2)
-
-list_floats3 = list()
-for b in range (15, 51, 5):
-    if (b/10)%1 != 0:
-        list_floats3.append(b/10)
-    else:
-        list_floats3.append(int(b/10))
-print(list_floats3)
-
-
-# Exercise 5 For Loop
-for i in range (1,21):
-    print (i)
-
-for i in range (1,21):
-    if i%2 == 0:
-        print (i)
-
-
-# Exercise 6 While Loop
-user_name = input("Write youre name until it's 'Sveta'")
-while user_name.lower() != "sveta":
-    user_name = input("Again write youre name until it's 'Sveta'")
-
-#Exercise 7 Favorite Fruits
-user_fruts = input("Say me yor favorite fruit(s). Separate the fruits with a single space: ").split(" ")
-print(user_fruts)
-user_new_frut = input("Say me one frut: ")
-if user_new_frut in user_fruts:
-    print ("You chose one of your favorite fruits! Enjoy!")
-else:
-     print ("You chose a new fruit. I hope you enjoy")
-
 #Exercise 8: Who Ordered A Pizza ?
 user_toppings = list()
-topping = ""
 while True:
     topping = input("Write pizza toppings ")
     if topping == "quit":
         break
     else:
         user_toppings.append (topping)
-print ("Your toppings:")
-for i in user_toppings:
-    print(i)
-print (f"total price is {10+len(user_toppings)*2.5}")
+        print (f"Topping {topping} was added")
+print (f"Your toppings: {', '.join(user_toppings)}")
+total_price = 10+len(user_toppings)*2.5
+print (f"total price is {total_price}")
 
 # Exercise 9: Cinemax
 # Family movie
