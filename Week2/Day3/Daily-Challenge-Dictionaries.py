@@ -19,7 +19,7 @@ items_purchase = {
   "Fan": "$14",
   "Bananas": "$4",
   "Pan": "$100",
-  "Spoon": "$2"
+  "Spoon": "$80"
 }
 
 wallet = "$100" 
@@ -35,8 +35,9 @@ result = []
 for item in items_purchase_int:
     if items_purchase_int[item]<wallet_int:
         result.append(item)
+        wallet_int -= items_purchase_int[item]
 
 if result:
-    print(result)
+    print(f"You can buy {', '.join(result)} and you will have {wallet_int}$")
 else:
     print ("Nothing")
