@@ -76,7 +76,7 @@ def main():
     return answer
 print(main())
 
-Exercise 8 : Star Wars Quiz
+# Exercise 8 : Star Wars Quiz
 data = [
     {
         "question": "What is Baby Yoda's real name?",
@@ -105,33 +105,19 @@ data = [
 ]
 
 def quiz(data:list):
-    correct_answers = 0
-    incorrect_answers = 0
-    list_incorrect_answers = []
-    list_failed_question = []
+    incorrect_answers = {}
     for i, item in enumerate(data):
         print(item["question"])
         user_answer = input("").lower().title()
-        if user_answer == item["answer"]:
-            correct_answers += 1
-        else:
-            incorrect_answers += 1
-            list_incorrect_answers.append(user_answer)
-            list_failed_question.append(i)
-
-    print (f"Number of correct answers is {correct_answers}. Number of wrong answers is {incorrect_answers}. \n Here are failed questions:")
-
-    k=0
-    for i, item in enumerate(data):
-        if i in list_failed_question:
-            print (f"{item['question']} Your answer is: '{list_incorrect_answers[k]}'. The right answer is '{item['answer']}'.")
-            k+=1
-
-    if incorrect_answers > 3:
+        if user_answer != item["answer"]:
+            incorrect_answers[i] = user_answer
+    print (f"Number of correct answers is {len(data)-len(incorrect_answers)}. Number of wrong answers is {len(incorrect_answers)}. \nHere are failed questions:")
+    for i, item in enumerate(incorrect_answers):
+            print (f"{data[item]['question']} Your answer is: '{incorrect_answers[item]}'. The right answer is '{data[item]['answer']}'.")
+    if len(incorrect_answers) > 3:
         play_again = input("You had more then 3 wrong answers, do you want to play again? Put Yes or No. ").lower().capitalize()
         if play_again == "Yes":
             quiz(data)
-
 quiz(data)
 
 
