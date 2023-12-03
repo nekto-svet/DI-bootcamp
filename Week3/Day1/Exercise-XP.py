@@ -31,7 +31,7 @@ def oldest_cat1():
             i+=1
     return all_cats[0]
 oldest_cat1 = oldest_cat1()
-print (f'The oldest cat is {oldest_cat1.name}, and is {oldest_cat1.age} years old.')
+print (f'The oldest cat is {oldest_cat1.name}, and it is {oldest_cat1.age} years old.')
 
 
 # Exercise 2 : Dogs
