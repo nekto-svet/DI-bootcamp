@@ -20,22 +20,10 @@ def read_matrix(martix):
         if char.isalpha():
             list_answer.append(char)
         else:
-            list_answer.append(' ')
-    print(list_answer)
-
-    # for i, char in enumerate(list_answer):
-    #     if (char.isspace) and (list_answer[i+1].isspace):
-    #         list_answer.remove(char)
-
-    i = 0
-    for i in range(0, (len(list_answer)-1)):
-        if list_answer[i].isspace: 
-        # and (list_answer[i+1].isspace):
-            del list_answer[i]
-        
-    answer = ''.join(list_answer)
-    
-
+            list_answer.append(' ') 
+    answer = ''.join(list_answer).removeprefix(" ").removesuffix(" ")
+    while "  " in answer:
+        answer = answer.replace("  ", " ")
     return answer
 
 matrix = make_martix(string)

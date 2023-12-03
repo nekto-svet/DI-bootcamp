@@ -16,7 +16,6 @@ for k in keys1:
     for v in values1:
         res_dict[k] = v
         values1.remove(v)
-        break
 
 print(res_dict)
 
