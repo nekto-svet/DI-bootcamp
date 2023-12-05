@@ -20,20 +20,24 @@ class Pagination:
     def nextPage(self):
         self.currentPage+=1
         if self.currentPage > self.totalPages:
-            self.currentPage -= 1
+            self.currentPage = 1
+        return self.currentPage
             
 
     def prevPage(self):
         self.currentPage-=1
         if self.currentPage < 1:
             self.currentPage += 1
+        return self.currentPage
             
 
     def firstPage(self):
         self.currentPage = 1
+        return self.currentPage
 
     def lastPage(self):
         self.currentPage = self.totalPages
+        return self.currentPage
     
     def goToPage(self, pageNum):
         if int(pageNum) > self.totalPages:
@@ -42,6 +46,7 @@ class Pagination:
             self.currentPage = 1
         else:
             self.currentPage = int(pageNum)
+        return self.currentPage
 
 alphabetList = list("abcdefghijklmnopqrstuvwxyz")
 
