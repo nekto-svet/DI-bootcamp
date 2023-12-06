@@ -6,28 +6,26 @@ class Currency:
     def __str__(self):
         return f"{self.amount} {self.currency}s"
     
-    def __int__(self): #??????????????????????????????????????????
-        try:
-            self.amount
-        except:
-            print('This is nit an integer')
-        else:
-            return self.amount #???????????????????????????????????
+    def __int__(self): 
+        return int(self.amount)
         
     def __repr__(self):
         return f"{self.amount} {self.currency}s"
     
     def __add__(self, other):
         if self.currency != other.currency:
-           raise TypeError("Cannot add between Currency type <dollar> and <shekel>")
-        return self.amount+other.amount
+            raise TypeError("Cannot add between different Currency types")
+        elif type(self.amount) != type(other.amount) != int:
+            raise TypeError("Amount shoul be integer")
+        elif type(self.amount) == type(other.amount) == int:
+            return self.amount+other.amount
     
     def __iadd__(self, other):
         try:
             self.amount += other
         except:
             if self.currency != other.currency:
-                raise TypeError("Cannot add between Currency type <dollar> and <shekel>")
+                raise TypeError("Cannot add between different Currency types")
             else: self.amount += other.amount
         return self
 
@@ -46,7 +44,7 @@ c1+=5
 print(c1)#10 dollars
 c1+=c2
 print(c1)#20 dollars
-c1 + c3 #TypeError
+#c1 + c3 #TypeError
 
 
 # Exercise 3: String Module
@@ -92,4 +90,4 @@ how_many_minutes(birthday)
 # Exercise 7 : Faker Module
 from faker import Faker
 fake = Faker()
-
+fake.name() #Now Faker works from terminal or cmd, but doesn't work from the code
