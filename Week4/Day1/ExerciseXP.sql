@@ -1,32 +1,30 @@
--- CREATE TABLE items (
+-- CREATE TABLE students (
 -- 	id serial PRIMARY KEY,
--- 	name varchar (255) NOT NULL,
--- 	price integer NOT NULL
+-- 	first_name varchar (58) NOT NULL,
+-- 	last_name varchar (58) NOT NULL,
+-- 	birth_date timestamp NOT NULL
 -- )
 
--- CREATE TABLE customers (
--- 	id serial PRIMARY KEY,
--- 	username varchar (255) NOT NULL,
--- 	userlastname varchar (255) NOT NULL
--- )
+-- INSERT INTO students (first_name, last_name, birth_date)
+-- VALUES ('Marc', 'Benichou', '02/11/1998'), 
+-- ('Yoan', 'Cohen', '03/12/2010'),
+-- ('Lea', 'Benichou', '27/07/1987'),
+-- ('Amelia', 'Dux', '07/04/1996'), 
+-- ('David', 'Grez', '14/06/2003'),
+-- ('Omer', 'Simpson', '03/10/1980')
 
--- INSERT INTO items (name, price)
--- VALUES ('Small Desk', 600), 
--- ('Large desk', 300),
--- ('Fan', 80)
+-- INSERT INTO students (first_name, last_name, birth_date)
+-- VALUES ('Sveta', 'Livshits', '26/02/1993')
 
--- INSERT INTO customers (username, userlastname)
--- VALUES ('Greg ', 'Jones'), 
--- ('Sandra', 'Jones'),
--- ('Scott', 'Scott'),
--- ('Trevor', 'Green'),
--- ('Melanie', 'Johnson')
+-- SELECT * FROM students
+-- SELECT * FROM students WHERE id =2
+-- SELECT * FROM students WHERE last_name = 'Benichou' and first_name = 'Marc'
+-- SELECT * FROM students WHERE last_name = 'Benichou' or first_name = 'Marc'
+-- SELECT * FROM students WHERE first_name ILIKE '%a%'
+-- SELECT * FROM students WHERE first_name ILIKE 'a%'
+-- SELECT * FROM students WHERE first_name LIKE '%a'
+-- SELECT * FROM students WHERE first_name LIKE '%a%'
+-- SELECT * FROM students WHERE id in (1,3)
 
--- SELECT * FROM items
--- SELECT * FROM items WHERE price > 80
--- SELECT * FROM items WHERE price <= 300
--- SELECT * FROM customers WHERE userlastname = 'Smith'
--- SELECT * FROM customers WHERE userlastname = 'Jones'
--- SELECT * FROM customers WHERE userlastname != 'Scott'
-
+-- SELECT * FROM students WHERE birth_date >= ' 1/01/2000'
 
