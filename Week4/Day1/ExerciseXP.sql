@@ -2,7 +2,7 @@
 -- 	id serial PRIMARY KEY,
 -- 	first_name varchar (58) NOT NULL,
 -- 	last_name varchar (58) NOT NULL,
--- 	birth_date timestamp NOT NULL
+-- 	birth_date date NOT NULL
 -- )
 
 -- INSERT INTO students (first_name, last_name, birth_date)
