@@ -63,7 +63,7 @@ driver.quit()
 #                //*[@id="content"]/div[2]/div[2]/div[3]/ul/li[4]/div/div/div[1]/div[2]
 #                //*[@id="content"]/div[2]/div[2]/div[3]/ul/li[10]/div/div/div[1]/div[2]
 #                //*[@id="content"]/div[2]/div[2]/div[3]/ul/li[5]/div/div/div[1]/div[2] 
-# wtf??
+# 
 # the last       //*[@id="content"]/div[2]/div[2]/div[3]/ul/li[8]/div/div/div[1]/div[2]
 #  xpath for contry name
 # //*[@id="MultiItemscountry-WraperSpan"]/span/span
@@ -105,3 +105,4 @@ for country in list_countries:
 
 cur.close()
 connection.close()
+#
