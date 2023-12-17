@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Countries</title>
+</head>
+<body>
+    <h2>What countries do you want to compare?</h2>
+    <form action="/result2" method="post">
+        <label for="countries">Country Names (separated by comma):</label>
+        <input type="text" id="countries" name="countries" required>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('index') }}"><button>To the Main Menu</button></a>
+</body>
+</html>
