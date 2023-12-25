@@ -76,7 +76,7 @@ for (let color of colors) {
 }
     
 // Exercise 3 : Repeat The Question
-Prompt the user for a number.
+// Prompt the user for a number.
 let userPromt = prompt('Give me a number')
 console.log(typeof(userPromt))
 
