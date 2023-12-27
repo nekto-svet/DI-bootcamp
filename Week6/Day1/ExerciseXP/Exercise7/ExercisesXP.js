@@ -23,21 +23,20 @@ allBooks = [
 
 let section = document.querySelector('section');
 
-for (let i = 0; i < allBooks.length; i++){
+for (let book of allBooks){
     let newDiv = document.createElement('div');
-    let newTextNode = document.createTextNode(`${allBooks[i]['title']} written by ${allBooks[i]['author']}`);
+    let newTextNode = document.createTextNode(`${book['title']} written by ${book['author']}`);
     let img = document.createElement('img');
-    img.src = allBooks[i]['image'];
+    img.src = book['image'];
+    img.style.width = '100px';
 
     newDiv.appendChild(img);
     newDiv.appendChild(newTextNode);
     section.appendChild(newDiv)
-}
-
-for (let book of allBooks) {
-    if (book['alreadyRead'] == true) {
+    if (book['alreadyRead']) {
         section.children[allBooks.indexOf(book)].style.color = 'red'
     }
 }
+
 
 
