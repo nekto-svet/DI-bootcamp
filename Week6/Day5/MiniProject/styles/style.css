@@ -1,0 +1,69 @@
+
+.navigation{
+    display: flex;
+    padding: 20px 0 15px 0;
+    background-color: #58e566;
+    background-image: url('../img/card-pattern.png');
+    border:  #0e2710 solid 2px;
+}
+
+.header {
+    font-family: 'Rubik Broken Fax';
+    font-size: 5vw;
+    margin: 0 30px 0 90px;
+
+}
+
+.find{
+    height: 5vw;
+    width: 35vw;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #edf589;
+}
+
+.main{
+    min-height: 100vh;
+    background-image: url('../img/circuit-pattern.png');
+    background-color: #953afc;
+}
+.container {
+    flex-wrap :wrap;
+    display:flex;
+    justify-content: space-around;
+    padding: 0 60px 0 60px;
+}
+
+.roboCard {
+    /* height: 600px; */
+    width: 300px;
+    margin: 30px;
+    background-image: url('../img/card-pattern.png');
+    background-color: #afe558;
+    border:  #0e2710 solid 2px;
+    border-radius: 20px;
+}
+
+.circle{
+    height: 230px;
+    width: 230px;
+    background-color: #25203f;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-position: center;
+    background-size: 250px
+}
+
+
+.roboName {
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 5px 0;
+}
+
+.roboMail{
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0 15px 0;
+}
