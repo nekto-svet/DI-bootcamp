@@ -40,13 +40,13 @@ displayStudentInfo({first: 'Elie', last:'Schoppik'});
 // Modify the outcome of part 1, by multipling the user’s ID by 2.
 // Excepted output: [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
 
-const users = { user1: 18273, user2: 92833, user3: 90315 }
+const users = { user1: 18273, user2: 92833, user3: 90315 };
 
 const usersArr = Object.entries(users);
-console.log(usersArr)
+console.log(usersArr);
 
-const usersMapped = usersArr.map(user => ([user[0], user[1]*2]))
-console.log(usersMapped)
+const usersMapped = usersArr.map(user => ([user[0], user[1]*2]));
+console.log(usersMapped);
 
 
 
@@ -155,16 +155,16 @@ class Animal {
 
 class Mamal extends Animal{
     constructor(name, type, color){
-        super(name, type, color)
+        super(name, type, color);
     }
 
     sound(currSound){
-        return `${this.name} the ${this.color} ${this.type} makes ${currSound}`
+        return `${this.name} the ${this.color} ${this.type} makes ${currSound}`;
     }
 }
 
-const farmerCow = new Mamal ("Zor'ka", "cow", "spotted")
-console.log(farmerCow.sound ('moooooo'))
+const farmerCow = new Mamal ("Zor'ka", "cow", "spotted");
+console.log(farmerCow.sound ('moooooo'));
 
 
 
