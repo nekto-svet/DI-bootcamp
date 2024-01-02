@@ -15,18 +15,18 @@
 
 class Video {
     constructor(title, uploader, time){
-        this.title = title
-        this.uploader = uploader
-        this.time = time
+        this.title = title;
+        this.uploader = uploader;
+        this.time = time;
     }
 
     watch() {
-        return `${this.uploader} watched all ${this.time} of ${this.title}!`
+        return `${this.uploader} watched all ${this.time} of ${this.title}!`;
     }
 }
 
-const cuteCats = new Video ('Cute cats', 'User1764', '304')
-console.log(cuteCats.watch())
+const cuteCats = new Video ('Cute cats', 'User1764', '304');
+console.log(cuteCats.watch());
 
 let allVideos = [
     ['Crazy cats', 'User159', '175'],
@@ -38,14 +38,14 @@ let allVideos = [
 
 
 allVideos.forEach((video, index, arr) => {
-    let x = new Video (video[0], video[1], video[2])
-    arr[index] = x
+    let x = new Video (video[0], video[1], video[2]);
+    arr[index] = x;
 });
 
-console.log (allVideos)
+console.log (allVideos);
 
 allVideos.forEach((video) => {
-    console.log(video.watch())
+    console.log(video.watch());
 })
 
 //or
