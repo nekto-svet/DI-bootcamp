@@ -104,7 +104,7 @@ const morse = `{
 let toJs = (JSONobj) => {
     return new Promise ((res, rej) => {
         let morseObj = JSON.parse(JSONobj);
-        morseObj.length != 0 ? res(morseObj) : rej(new Error('object is empty'));
+        Object.keys(morseObj).length != 0 ? res(morseObj) : rej(new Error('object is empty'));
     })
 }
 
@@ -131,7 +131,6 @@ let toMorse = (morseJS) => {
 }
 
 // // The third function called joinWords(morseTranslation), takes one argument: the morse translation array
-
 // // this function joins the morse translation by using line break and display it on the page (ie. On the DOM)
 
 let joinWords = (morseTranslation) => {
@@ -143,6 +142,8 @@ let joinWords = (morseTranslation) => {
     });
     document.getElementById("answer").innerHTML = html.join("");
 }
+
+
 
 toJs(morse)
     .then ((morseJS) => {
