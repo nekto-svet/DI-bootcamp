@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge: Gifs</title>
+</head>
+<body>
+    <style>
+        #searchForm{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #delete{
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        #gifs{
+            padding: 0 40px 0 40px;
+            width: 80vw;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gifWrapper{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+        img{
+            width: inherit;
+            margin: 4px;
+        }
+
+    </style>
+
+    <form id="searchForm">
+        Category<input type="text" id="category">
+        <input type="submit" value="Search">
+    </form>
+    
+    <button id="delete" onclick="deleteAll()">Delete All</button>
+
+    <div id="gifs"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
