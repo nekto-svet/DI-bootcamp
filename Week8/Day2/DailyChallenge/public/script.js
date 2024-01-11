@@ -38,7 +38,3 @@ document.getElementById('guess').addEventListener('submit', function (event) {
 });
 
 
-
-
-  
-

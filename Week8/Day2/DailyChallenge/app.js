@@ -2,7 +2,6 @@ import express from 'express';
 import { emojis } from "./emojis.js";
 import path from "path";
 
-
 const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
