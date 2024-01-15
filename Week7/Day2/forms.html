@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <form method="GET" action="/some URL # JSON file with information"> // if click you get a response - this URL
+        <input type="text" value="send">
+        <input type="number" min="1" name="id"> // if in JSON file there is "id" and numbers we will GET information like from array of objects when id=number. If 6 request will be "adress/user?id=6"
+    </form> -->
+
+    <h2>Users By UserID</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users"> 
+        <input type="text" value="send">
+        <input type="number" min="1" name="id">
+    </form>
+
+    <h2>All Posts</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="submit" value="send">
+    </form>
+    <h2>Posts By UserID</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="number" name="userID" min="1" max="10"> // https://jsonplaceholder.typicode.com/posts?userID=number
+        <input type="submit" value="send">
+    </form>
+
+    <h2>Add Post</h2>
+    <form method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        Title: <input type="text" name="title"><br>
+        Body: <input type="text" name="body"><br>
+        User id <input type="number" min="1" max="10" name="userId"><br>
+        <input type="submit">
+        <!-- after submitting it is in Look code => Network => Payload, waiting what will be with this information afrer -->
+    </form>
+
+
+    <h2>Users By UserID</h2>
+    <form method="GET" action="https://users-18kl.onrender.com/users"> 
+        <!-- html -->
+        <input type="submit" value="send">
+    </form>
+
+    <h2>Add a User</h2>
+    <form method="POST" action="https://users-18kl.onrender.com/user">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="text" name="email"><br>
+        Username <input type="text" name="username"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

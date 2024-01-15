@@ -44,6 +44,7 @@ const optionSelectCurrencies = (arr) => {
 };
 
 
+
 document.getElementById('currencyForm').addEventListener('submit', function (event) {
     event.preventDefault();
     const curr1 = document.getElementById('curr1').value;
