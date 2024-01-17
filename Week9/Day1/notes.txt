@@ -1,0 +1,216 @@
+terminal:
+PS C:\DI\DI-bootcamp> cd C:\DI\DI-bootcamp\Week9\Day1
+PS C:\DI\DI-bootcamp\Week9\Day1> npm i -g create-react-app
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+
+added 67 packages in 3s
+
+5 packages are looking for funding
+  run `npm fund` for details
+PS C:\DI\DI-bootcamp\Week9\Day1> create-react-app my-first-react-app
+
+Creating a new React app in C:\DI\DI-bootcamp\Week9\Day1\my-first-react-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1484 packages in 2m
+
+250 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 69 packages, and changed 1 package in 18s
+
+254 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1553 packages in 3s
+
+254 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created my-first-react-app at C:\DI\DI-bootcamp\Week9\Day1\my-first-react-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd my-first-react-app
+  npm start
+
+Happy hacking!
+PS C:\DI\DI-bootcamp\Week9\Day1> npm start
+Compiled successfully!
+
+You can now view my-first-react-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.201:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+^C^CTerminate batch job (Y/N)? y
+PS C:\DI\DI-bootcamp\Week9\Day1\my-first-react-app> cd ..
+PS C:\DI\DI-bootcamp\Week9\Day1> npx create-rect-app my-second-react
+npm ERR! code E404
+npm ERR! 404 Not Found - GET https://registry.npmjs.org/create-rect-app - Not found
+npm ERR! 404 
+npm ERR! 404  'create-rect-app@*' is not in this registry.
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! A complete log of this run can be found in: C:\Users\nekto\AppData\Local\npm-cache\_logs\2024-01-17T10_08_12_576Z-debug-0.log
+PS C:\DI\DI-bootcamp\Week9\Day1> npx create-react-app my-second-react
+
+Creating a new React app in C:\DI\DI-bootcamp\Week9\Day1\my-second-react.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1484 packages in 46s
+
+250 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 69 packages, and changed 1 package in 6s
+
+254 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1553 packages in 3s
+
+254 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created my-second-react at C:\DI\DI-bootcamp\Week9\Day1\my-second-react
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+Compiled successfully!
+
+You can now view my-second-react in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.201:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+
+////////////////////////////////////////////vite library///////////////////////////////////////////////////////////
+PS C:\DI\DI-bootcamp\Week9\Day1\my-second-react> cd ..
+PS C:\DI\DI-bootcamp\Week9\Day1> npm create vite@latest my-third-react
+Need to install the following packages:
+create-vite@5.1.0
+Ok to proceed? (y) y
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\DI\DI-bootcamp\Week9\Day1\my-third-react...
+
+Done. Now run:
+
+  cd my-third-react
+  npm install
+  npm run dev
+
+PS C:\DI\DI-bootcamp\Week9\Day1> cd C:\DI\DI-bootcamp\Week9\Day1\my-third-react
+PS C:\DI\DI-bootcamp\Week9\Day1\my-third-react> ls
+
+
+    Directory: C:\DI\DI-bootcamp\Week9\Day1\my-third-react
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         1/17/2024  12:15 PM                public
+d-----         1/17/2024  12:15 PM                src
+-a----         1/17/2024  12:14 PM            526 .eslintrc.cjs
+-a----         1/17/2024  12:14 PM            253 .gitignore
+-a----         1/17/2024  12:14 PM            361 index.html
+-a----         1/17/2024  12:15 PM            659 package.json
+-a----         1/17/2024  12:14 PM            451 README.md
+-a----         1/17/2024  12:14 PM            163 vite.config.js
+
+
+PS C:\DI\DI-bootcamp\Week9\Day1\my-third-react> npm i      
+
+added 270 packages, and audited 271 packages in 16s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\DI\DI-bootcamp\Week9\Day1\my-third-react> npm run dev
+
+> my-third-react@0.0.0 dev
+> vite
+
+
+  VITE v5.0.11  ready in 1741 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
+
+
+
+
+
+
+
+
+
+
