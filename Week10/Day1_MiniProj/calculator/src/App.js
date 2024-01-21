@@ -24,7 +24,7 @@ function App() {
         setResult(+num1 / +num2);
         break;
       default:
-        setResult('Pleace choose an operation');
+        setResult('Choose an operation');
     }
     
   }
