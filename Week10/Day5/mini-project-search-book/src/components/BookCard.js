@@ -1,12 +1,13 @@
 
-const BookCard = ({ book }) => {
-    const { volumeInfo } = book;
+const BookCard = (props) => {
+    const { book } = props;
+    const info = book.volumeInfo;
   return (
     <div>
-      <img src={volumeInfo.imageLinks.thumbnail} alt={volumeInfo.title} />
-      <h3>{volumeInfo.title}</h3>
-      <p>{volumeInfo.authors ? volumeInfo.authors.join(', ') : 'Unknown Author'}</p>
-      <p>Published Year: {volumeInfo.publishedDate}</p>
+      <img src={info.imageLinks.thumbnail} alt={info.title} />
+      <h3>Title: {info.title}</h3>
+      <p>Author: {info.authors}</p> 
+      <p>Published Year: {info.publishedDate}</p>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 const Book = () => {
-    const { search, onInputChange, onSearch, onSort } = useContext(AppContext);
+    const { search, handleInputChange, handleSearch, handleSort } = useContext(AppContext);
   return (
     <div>
-      <input type="text" value={search} onChange={onInputChange} />
-      <button onClick={onSearch}>Search</button>
-      <button onClick={onSort}>Sort by Newest</button>
+      <input type="text" value={search} onChange={handleInputChange} />
+      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSort}>Sort by Newest</button>
     </div>
   );
 };

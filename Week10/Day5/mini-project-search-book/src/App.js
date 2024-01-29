@@ -12,9 +12,9 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'SET_SEARCH':
+    case 'search':
       return { ...state, search: action.payload };
-    case 'SET_BOOKS':
+    case 'books':
       return { ...state, books: action.payload };
     default:
       return state;
@@ -30,21 +30,21 @@ const App = () => {
         `https://www.googleapis.com/books/v1/volumes?q=${state.search}`
       );
       const data = await response.json();
-      dispatch({ type: 'SET_BOOKS', payload: data.items || [] });
+      dispatch({ type: 'books', payload: data.items || [] });
     } catch (error) {
       console.error('Error fetching books:', error);
     }
   };
 
   const handleInputChange = (event) => {
-    dispatch({ type: 'SET_SEARCH', payload: event.target.value });
+    dispatch({ type: 'search', payload: event.target.value });
   };
 
   const handleSort = () => {
     const sortedBooks = [...state.books].sort((a, b) =>
       a.volumeInfo.publishedDate < b.volumeInfo.publishedDate ? 1 : -1
     );
-    dispatch({ type: 'SET_BOOKS', payload: sortedBooks });
+    dispatch({ type: 'books', payload: sortedBooks });
   };
 
   return (
@@ -52,9 +52,9 @@ const App = () => {
       <AppContext.Provider
         value={{
           search: state.search,
-          onSearch: handleSearch,
-          onInputChange: handleInputChange,
-          onSort: handleSort,
+          handleSearch,
+          handleInputChange,
+          handleSort,
           books: state.books,
         }}
       >
