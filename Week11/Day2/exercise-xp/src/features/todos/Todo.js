@@ -13,9 +13,7 @@ const Todos =() => {
     const todos = useSelector(state => state.todos);
     const dispatch = useDispatch();
     const textRef = useRef();
-    todos.forEach(element => {
-        console.log(element.isDone)        
-    });
+
 
     return (
         <>
